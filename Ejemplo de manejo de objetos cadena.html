@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de manejo de objetos de cadena</title>
+</head>
+
+<body>
+    <script LENGUAGE="javascript">
+        var miCadena = prompt("Introduzca un texto: ");
+        var palabras = new Array();
+        var palabras = miCadena.split("");
+        with (document) {
+            write("La cadena es " + miCadena + "<br>");
+            write("El número de caracteres de la cadena es: " + miCadena.lengh + "<br>");
+            write("Haciéndola ancla " + miCadena.anchor("#") + "<br>");
+            write("En grande " + miCadena.big() + "<br>");
+            write("Parpadeante " + miCadena.blink() + "<br>");
+            write("Caracter 4 es: " + miCadena.charAt(3) + "<br>");
+            write("Fuente FIDEX " + miCadena.fixed() + "<br>");
+            write("De color rojo " + miCadena.fontcolor("#FF0000") + "<br>");
+            write("De color verde " + miCadena.fontcolor("green") + "<br>");
+            write("Fuente tamaño 7 " + miCadena.fontsize(7) + "<br>");
+            write("<br>En cursiva " + miCadena.italics() + "<br>");
+            write("La primera <l>a</l> está empezando a contar por detrás");
+            write("en la posición " + miCadena.lastIndexOf("a") + "<br>");
+            write("Haciéndola enlace: " + miCadena.link("#") + "<br>");
+            write("En pequeño " + miCadena.small() + "<br>");
+            write("Tachada " + miCadena.strike() + "<br>");
+            write("Subindice " + miCadena.sub() + "<br>");
+            write("Superindice " + miCadena.sup() + "<br>");
+            write("Minuscula: " + miCadena.toLowerCase() + "<br>");
+            write("Mayúcula: " + miCadena.toUpperCase() + "<br>");
+            write("Subcadena entre los caracteres 4 y 6: ");
+            write(miCadena.substring(3, 6) + "<br>");
+            write("Entre los caracteres 6 y 4: " + miCadena.substring(6, 3) + "<br>");
+            write("Subcadenas resultantes de separar en palabras</b><br>");
+            for (var i = 1; i < palabras.length; i++){
+
+            }
+        }
+    </script>
+</body>
+
+</html>

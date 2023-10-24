@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Código de la 64 y 65</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // El metodo "splice" cambia el contenido de un arreglo
+        // eliminando elementos existentes y/o agregando nuevos 
+        // eleementos 
+        let frutas = ["Fresa","Melon","Piña","Naranja","Kiwwi"];
+
+        document.write(frutas);
+        // Insertar un elemento en medio del arreglo
+        frutas.splice(2,0,"Toronja");
+        document.write("<br>");
+        // Va a imprimir "Fresa, Melon, Toronja, Piña, Naranja, Kiwwi"
+        document.write(frutas);
+
+        // Eliminar el elemento 4 del arreglo
+        frutas.splice(3,1);
+        document.write("<br>");
+        // Va a imprimir "Fresa, Melon, Toronja, Naranja, Kiwwi"
+        document.write(frutas);
+
+        // Eliminar todos los elementos a partir del elemento 4 del arreglo
+        frutas.splice(3);
+        document.write("<br>");
+        // Imprime Fresa, Melon, Toronja
+        document.write(frutas)
+    </script>
+    Este es el programa 2:
+    <script type="text/javascript">
+        // El metodo for in es una sentencia que nos permite recorrer un 
+        // arreglo desde el inicio hasta el fin
+        let frutas2 = ["Fresa", "Melon", "piña", "Naranja", "Kiwwi"];
+        for(let i in frutas2){
+            document.write(i + ".- " + frutas2[i] + "<br>");
+        }
+    </script>
+    Este es el programa 3:
+    <script type="text/javascript">
+        // ForEach lo que hace es ejecutar la función callback una vez por cada
+        // elemento presente en el arreglo en orden ascendente
+        let frutas3 = ["Fresas","Melon","Piña","Naranja","Kiwwi"];
+        frutas3.forEach((elemento, indice)=>document.write(indice + ".- " + elemento + "<br>"));
+    </script>
+    Códigos  de la página 65:<br>
+    Programa 1:
+    <script type="text/javascript">
+        // La función "find" devuelve el valor del primer elemento del
+        // arreglo que cumple la función cualquier otro caso se devuelve 
+        // Como UNDEFINED
+        let frutas4 = ["Fresa","Melon","Piña","Naranja","Kiwwi"];
+        let buscaFruta = "Kiwwi";
+        let existe = frutas4.find(fruta=>fruta==buscaFruta);
+        document.write(existe + "<br>");
+    </script>
+    <br>Programa 2:
+    <script type="text/javascript">
+        // findIndex devuelve el índece del primer elemento de un 
+        // arreglo que cumpla con la función de prueba proporcionada. en caso
+        // de que no sea así devuelve -1
+
+        let frutas5 = ["Fresa", "Melon","piña","Naranja","Kiwwi"];
+        let buscaFruta2 = "Kiwwi";
+        let existe2 = frutas5.findIndex(fruta=>fruta==buscaFruta2);
+        document.write(existe2 + "<br>");
+    </script>
+    <br> Programa 3: 
+    <script type="text/javascript">
+        // La función "Filter" crea un nuevo arreglo con todos los ementos que 
+        // cumplan la condición implementada por la función dada
+        let frutas6 = ["Fresa", "Kiwwi", "Melon", "piñar", "Naranja", "Kiwwi"];
+        let buscaFruta3 = "Kiwwi";
+        let existe3 = frutas6.filter(fruta=>fruta==buscaFruta3);
+        document.write(existe + "<br>");
+    </script>
+    <br>Programa 4:
+    <script type="text/javascript">
+        // Some comprueva si al menos un elemento del arreglo cumple con la condición
+        // proporcionada
+        let enteros = [1,2,3,4,5,50,60,100]
+
+        let existe4 = enteros.some(valor=>valor>100);
+        // va a imprimir false
+        document.write(existe4 + "<br>"); 
+    </script>
+</body>
+</html>

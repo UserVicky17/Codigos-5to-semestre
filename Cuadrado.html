@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuadrado</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let lado, area;
+        var cua = new Array(3);
+        for(var i = 1; i<=3; i++){
+            lado=parseInt(prompt("Introduzca el lado del cuadrado "+ i));
+            cua[i] = lado*lado;
+        }
+        for(var i = 1; i<=3; i++){
+            document.writeln("El area del cuadrado "+ i + " es de " + cua[i] + "<br>");
+        }
+    </script>
+</body>
+</html>

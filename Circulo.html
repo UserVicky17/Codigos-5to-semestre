@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Circulo</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let radio, pi=3.14;
+        var cir = new Array(3);
+        for(var i = 1; i<=3; i++){
+            radio=parseInt(prompt("Introduzca el radio del circulo "+ i));
+            cir[i] = pi*(radio*radio);
+        }
+        for(var i = 1; i<=3; i++){
+            document.writeln("El area del circulo "+ i + " es de " + cir[i] + "<br>");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de javascript</title>
+</head>
+<body>
+    <div style="width: 200px; height: 200px; background: #ffff00;" id="recuadro1">
+        Prueba del evento click
+    </div>    
+    <div style="width: 200px; height: 200px; background: #ff5500;" id="recuadro2">
+        Prueba del evento dblclick
+    </div>
+    <script type="text/javascript">
+        document.getElementById("recuadro1").addEventListener('click', presion1);
+        document.getElementById('recuadro2').addEventListener('dblclick', presion2);
+
+        function presion1(){
+            alert('Se hizo click');
+        }
+        function presion2(){
+            alert('Se hizo doble click');
+        }
+    </script>
+</body>
+</html>

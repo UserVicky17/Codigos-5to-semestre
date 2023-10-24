@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de objeto de imagen</title>
+    <script type="text/javascript">
+        if(document.images){
+            var img1 = new Image();
+            img1.src = "img1.png";
+            var img2 = new Image();
+            img2.src = "img2.png";
+        }
+        function primera(Continua){
+            if(document.images){
+                document[Continua].src=img2.src;
+            }
+        }
+        function segunda(Para){
+            if(document.images){
+                document[Para].src=img1.src;
+            }
+        }
+    </script>
+</head>
+<body>
+    <a href="Ejemplo de manejo de objetos cadena.html" onmouseover="primera('prueba');" onmouseout="segunda('prueba');">
+        <img name = "prueba" src="dibujo.webp" border="0">
+    </a>
+</body>
+</html>

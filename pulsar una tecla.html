@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Presiona cualquier tecla para continuar</title>
+    
+</head>
+<body>
+    <input type="text" id="texto1">
+    <script type="text/javascript">
+        var texto = document.getElementById("texto1");
+        texto.addEventListener("keypress", mostrar);
+
+        function mostrar(e){
+            alert("Se presiono la tecla " + e.key);
+        }
+    </script>
+</body>
+</html>

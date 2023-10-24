@@ -1,0 +1,13 @@
+<?php 
+    setcookie("ejemusuario", $nombre, time()+3600, "/","");
+?>
+<html lang="es">
+<head>
+    <title>Ejemplo de PHP</title>
+</head>
+<body>
+    <h1>Ejemplo de uso de cookie</h1> 
+
+    Se ha establecido una cookie de nombre <b>ejemusuario</b> con el valor: <b><? print $nombre; ?> </b> que sera valida durante 1 hora.
+</body>
+</html>
