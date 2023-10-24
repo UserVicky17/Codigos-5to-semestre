@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorama</title>
+    <link rel="stylesheet" href="disenio.css">
+</head>
+
+<body>
+    <script type="text/javascript">
+        // posision del cada animal y su pareja
+        var posPerro1, posPerro2, posGato1, posGato2, posRaton1, posRaton2;
+        // usamos un array para guardar los espacios de cada uno
+        var pos = [];
+        function mezclar() {
+            // la funcion mezclar hara una reparticion de todas las posiciones de las imagenes 
+            // lo tuve que copiar no podía hacer nada 
+        
+            // mientras que el array no pase de 6 se sigue ejecutando
+            while (pos.length < 6) {
+                // generamos un numero aleatorio y lo guardamos en num
+                var num = Math.floor(Math.random() * 6) + 1;
+                // si es que no existe algun numero en cualquiera de los elementos de pos 
+                if (!pos.includes(num)) {
+                    // se agrega a la lista
+                    pos.push(num);
+                }
+            }
+            // le damos una posision a cada animal y pareja
+            posPerro1 = pos[0];
+            posPerro2 = pos[1];
+            posGato1 = pos[2];
+            posGato2 = pos[3];
+            posRaton1 = pos[4];
+            posRaton2 = pos[5];
+
+            // Estructura de generar un num aleatorio:
+            // Math.floor(Math.random() * (MAX - MIN + 1)) + MIN;
+        }
+        // función que nos ayuda a saber que tarjeta mostrar con el parametro noTar (numero de tarjeta)
+        function Mostrar(noTar) {
+            document.getElementById('mem[' + noTar + ']').style.webkitAnimationPlayState = "initial";
+            alert(pos[noTar]);
+        }
+    </script>
+    <div class="mezclar" onclick="mezclar()">
+        Mezclar
+    </div>
+    <div class="contenedor">
+        <div class="contenedor2">
+            <div class="memorama">
+                <div onclick="Mostrar(0)" id="mem[0]">
+                    <img src="pregunta.png" id="img1">
+                </div>
+                <div onclick="Mostrar(1)" id="mem[1]">
+                    <img src="pregunta.png">
+                </div>
+                <div onclick="Mostrar(2)" id="mem[2]">
+                    <img src="pregunta.png">
+                </div>
+                <div onclick="Mostrar(3)" id="mem[3]">
+                    <img src="pregunta.png">
+                </div>
+                <div onclick="Mostrar(4)" id="mem[4]">
+                    <img src="pregunta.png">
+                </div>
+                <div onclick="Mostrar(5)" id="mem[5]">
+                    <img src="pregunta.png">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

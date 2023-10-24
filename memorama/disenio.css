@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(37, 37, 114);
+}
+.mezclar{
+    height: 50px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(15, 146, 25);
+}
+.contenedor{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 800px;
+    width: 90%;
+    background-color: aliceblue;
+    border-radius: 2%;
+}
+.contenedor2{
+    border-radius: 3%;
+    position: relative;
+    top: 5%;
+    margin-left: 1.5%;
+    height: 700px;
+    width: 97%;
+    background-color: bisque;
+    
+}
+.memorama{
+    position: relative;
+    top: 5%;
+    left: 2%;
+    right: 2%;
+    display: grid;  
+    width: 96%;
+    /* usamos el grid para dividir los cuadros */
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    gap: 100px ;
+}
+.memorama div{
+    text-align: center;
+    border-radius: 2%;
+    animation-name: rotar;
+    animation-duration: 1s;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+@keyframes rotar{
+    0%{
+    }
+    100%{
+        transform: rotateY(180deg);
+        
+    }
+}
